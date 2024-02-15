@@ -145,8 +145,14 @@ In order to realise the fonction of the class CollectionTest , we made the follo
             .collect(Collectors.toList());
   }
 ```
+# Testing results:
+As we can see that our code has passed all the tests:
 
-# clone the repository : 
+![image](https://github.com/SalahZITOUNI/java-interview-particeep/assets/157633302/e6468b76-23e8-4500-a338-b0686c38ad43)
+
+
+
+# Clone the repository : 
 To clone the repository use the following code:
 
 ```bash
