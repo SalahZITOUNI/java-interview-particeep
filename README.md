@@ -62,7 +62,7 @@ public static CompletableFuture<Tuple2<Option<Ceo>, Option<Enterprise>>> getCEOA
 
 Enhancements were also applied to the Ceo and Enterprise classes to introduce functions that facilitate accessing class members and other functionalities:
 
-1`. ** Ceo Class Enhancements: **
+1`.** Ceo Class Enhancements: **
 
   ```bash
         // getId method
@@ -75,7 +75,7 @@ Enhancements were also applied to the Ceo and Enterprise classes to introduce fu
   }
 ```
 
-2`. ** Enterprise Class Enhancements: **
+2`.** Enterprise Class Enhancements: **
 
 
   ```bash
