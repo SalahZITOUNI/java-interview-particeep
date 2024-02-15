@@ -38,7 +38,7 @@ To incorporate the Vavr library into our project, Maven is used to handle the ne
 In order to complete the assignement i modified the the codes provided and i tested and my code passed all the tests.
 you can find the code the repository.
 
-1. ** Async Modifications : **
+#1. Async Modifications :
    
 The AsyncTest class required updates to fulfill its intended functionality. The modifications include implementing asynchronous operations for retrieving CEO and Enterprise details:
 
@@ -62,7 +62,7 @@ public static CompletableFuture<Tuple2<Option<Ceo>, Option<Enterprise>>> getCEOA
 
 Enhancements were also applied to the Ceo and Enterprise classes to introduce functions that facilitate accessing class members and other functionalities:
 
-1`.** Ceo Class Enhancements: **
+# 1`. Ceo Class Enhancements: 
 
   ```bash
         // getId method
@@ -75,7 +75,7 @@ Enhancements were also applied to the Ceo and Enterprise classes to introduce fu
   }
 ```
 
-2`.** Enterprise Class Enhancements: **
+# 2`.Enterprise Class Enhancements: 
 
 
   ```bash
@@ -92,7 +92,7 @@ Enhancements were also applied to the Ceo and Enterprise classes to introduce fu
   }
 ```
 
-2. ** Modification on BasicTest : **
+# 2.Modification on BasicTest : 
 
 In order to realise the fonction of the class BasicTest , we made the following modification on the original code :
 
@@ -123,7 +123,7 @@ In order to realise the fonction of the class BasicTest , we made the following 
       return Option.of((int) result); // Safe cast since we checked for overflow
   }
 ```
-3. ** Modification on CollectionTest : **
+# 3. Modification on CollectionTest :
    
 In order to realise the fonction of the class CollectionTest , we made the following modification on the original code :
 
