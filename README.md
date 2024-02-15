@@ -39,6 +39,7 @@ In order to complete the assignement i modified the the codes provided and i tes
 you can find the code the repository.
 
 1. ** Async Modifications : **
+   
 The AsyncTest class required updates to fulfill its intended functionality. The modifications include implementing asynchronous operations for retrieving CEO and Enterprise details:
 
 ```bash
@@ -76,6 +77,7 @@ Enhancements were also applied to the Ceo and Enterprise classes to introduce fu
 
 2`. ** Enterprise Class Enhancements: **
 
+
   ```bash
       // Getter for the CEO ID
   public String getCeoId() {
@@ -91,6 +93,7 @@ Enhancements were also applied to the Ceo and Enterprise classes to introduce fu
 ```
 
 2. ** Modification on BasicTest : **
+
 In order to realise the fonction of the class BasicTest , we made the following modification on the original code :
 
 ```bash
@@ -121,6 +124,7 @@ In order to realise the fonction of the class BasicTest , we made the following 
   }
 ```
 3. ** Modification on CollectionTest : **
+   
 In order to realise the fonction of the class CollectionTest , we made the following modification on the original code :
 
 ```bash
