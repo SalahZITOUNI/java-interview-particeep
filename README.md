@@ -38,7 +38,7 @@ To incorporate the Vavr library into our project, Maven is used to handle the ne
 In order to complete the assignement i modified the the codes provided and i tested and my code passed all the tests.
 you can find the code the repository.
 
-#1. Async Modifications :
+# 1. Async Modifications :
    
 The AsyncTest class required updates to fulfill its intended functionality. The modifications include implementing asynchronous operations for retrieving CEO and Enterprise details:
 
