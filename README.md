@@ -1,23 +1,20 @@
-# Test in java for interview
+# Java Interview Test Preparation
 
-# System preperation:
-To run the test make assure that you are using the latest version of maven and sbt.
-the provided version of sbt in the building files dosn't work becouse it is using the version 1.5.5.
-currently the latest version is 1.9.8.
-I have modified the version the build.properties file to 1.9.8
+# System Setup:
+Before running the tests, please ensure you are using the most current versions of Maven and SBT. The SBT version specified in the provided build files is outdated (1.5.5), and it's recommended to upgrade to the latest version, 1.9.8. The build.properties file has been updated accordingly to reflect this change:
 
   ```bash
     sbt.version=1.9.8
 ```
 
-The original file contain an old version of scalaVersion in the file build.sbt , so  i  needed to update it to use a higher version:
+Additionally, the original build.sbt file listed an obsolete scalaVersion. It has been updated to a more recent version for compatibility and performance improvements:
 
   ```bash
     ThisBuild / scalaVersion     := "2.13.12"
 ```
 
-# Dependancies
-To run the librery vavr i need to use maven to download and add the dependancies so i created the file pom.xml :
+# Managing Dependencies:
+To incorporate the Vavr library into our project, Maven is used to handle the necessary dependencies. This step involves creating a pom.xml file with the following configuration:
 
   ```bash
     <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -37,12 +34,12 @@ To run the librery vavr i need to use maven to download and add the dependancies
 </project>
 ```
 
-# Modification of the code :
+# Code Modifications :
 In order to complete the assignement i modified the the codes provided and i tested and my code passed all the tests.
 you can find the code the repository.
 
-1. ** Modification on async : **
-In order to realise the fonction of the class AsyncTest , we made the following modification on the original code :
+1. ** Async Modifications : **
+The AsyncTest class required updates to fulfill its intended functionality. The modifications include implementing asynchronous operations for retrieving CEO and Enterprise details:
 
 ```bash
   public static CompletableFuture<Option<Ceo>> getCeoById(String ceoId) {
@@ -62,9 +59,9 @@ public static CompletableFuture<Tuple2<Option<Ceo>, Option<Enterprise>>> getCEOA
 }
 ```
 
-we also made modifications on the Ceo class and the Enterprise class by adding the necessry fonction whish will allow the class to return the member of to other classes and other fonctons.
+Enhancements were also applied to the Ceo and Enterprise classes to introduce functions that facilitate accessing class members and other functionalities:
 
-1`. ** Ceo class : **
+1`. ** Ceo Class Enhancements: **
 
   ```bash
         // getId method
@@ -77,7 +74,7 @@ we also made modifications on the Ceo class and the Enterprise class by adding t
   }
 ```
 
-2`. ** Enterprise class : **
+2`. ** Enterprise Class Enhancements: **
 
   ```bash
       // Getter for the CEO ID
@@ -152,15 +149,15 @@ As we can see that our code has passed all the tests:
 
 
 
-# Clone the repository : 
-To clone the repository use the following code:
+# Repository Cloning : 
+To clone the repository for accessing the modified code, use the following command:
 
 ```bash
 git clone https://github.com/SalahZITOUNI/java-interview-particeep.git
 ```
 
-# How to run the code :
-After you assure the your computer is ready :
+# Running the Code :
+Ensure your environment is correctly set up prior to executing the code. The following commands will guide you through cleaning, updating, compiling, and testing the project:
 
 ```
 cd /some_path/java-interview
@@ -168,8 +165,8 @@ sbt clean update compile
 sbt test
 ```
 
-# Petentiol problemes :
-you may have problemes with sbt you can try to clean sbt:
+# Troubleshooting :
+Should you encounter any issues with SBT, executing the following command may resolve them:
 
 ```bash
 sbt clean
