@@ -35,7 +35,7 @@ To incorporate the Vavr library into our project, Maven is used to handle the ne
 ```
 
 # Code Modifications :
-In order to complete the assignement i modified the the codes provided and i tested and my code passed all the tests.
+In order to complete the assignement , i modified the the codes provided , i tested it and my codes has passed all the tests.
 you can find the code the repository.
 
 # 1. Async Modifications :
